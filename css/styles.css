@@ -1,0 +1,111 @@
+body {
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1eded;
+  background-image: url(../img/photo001.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  color: #000000cc;
+  overflow-y: scroll; 
+}
+
+.container-tarefas {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(218, 213, 213, 0.644);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(8, 8, 8, 0.842);
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: rgba(24, 23, 23, 0.884);
+  cursor: pointer;
+  transition: border 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+}
+
+h1:hover {
+  border: 2px solid #007bff;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.controle-formulario {
+  display: flex;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#form-edicao {
+  display: none;
+}
+
+#barra-de-ferramentas {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#busca,
+#filtro {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#entrada-busca {
+  width: 70%;
+  padding: 8px;
+}
+
+#botao-limpar {
+  background-color: #dc3545;
+}
+
+#lista-de-tarefas {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+#lista-de-tarefas > div {
+  margin-bottom: 10px;
+}
+
+#lista-de-tarefas p {
+  display: inline-block;
+  margin: 0;
+}
+
+#lista-de-tarefas button {
+  margin-left: 10px;
+  background-color: #28a745;
+}
